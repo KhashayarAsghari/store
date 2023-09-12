@@ -1,0 +1,18 @@
+.header {
+    background-color: $color-secondary-light;
+    padding: $padding-m 0;
+
+    &__container {
+        @include wauto($medium-width);
+        @include dflex(space-between);
+
+        &__user {
+
+
+            &__item {
+                padding: $padding-s $padding-m;
+            }
+        }
+    }
+}
+
