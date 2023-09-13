@@ -1,0 +1,36 @@
+.card {
+    width: 300px;
+    border: 2px solid $color-gray;
+    overflow: hidden;
+    background-color: $color-white;
+    padding-bottom: $padding-l;
+
+    &__image {
+        width: 100%;
+        margin: auto;
+        object-fit: cover;
+        height: 350px;
+    }
+
+    &__desc {
+        @include wauto(90%);
+        
+
+        &__title {
+            color: $color-primary;
+            margin-top: $margin-m;
+            overflow: hidden;
+            text-overflow: clip;
+            display: -webkit-box;
+            -webkit-line-clamp: 1; /* number of lines to show */
+                    line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+
+        &__price {
+            margin-top: $margin-m;
+            color: $color-accent-primary;
+            font-size: 1rem;
+        }
+    }
+}
