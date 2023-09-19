@@ -1,0 +1,37 @@
+.hidden {
+    display: none!important;
+}
+
+
+.cart {
+    @include dflex(flex-start, center, column, nowrap);
+    background-color: $color-gray;
+    width: 500px;
+    max-height: 80vh;
+    overflow: auto;
+    position: absolute;
+    top: 10%;
+    right: 0;
+
+    &__item {
+        @include dflex(flex-start, flex-start, row-reverse, nowrap);
+        margin-bottom: $margin-xl;
+        padding: $padding-s $padding-l;
+
+        &__image {
+            width: 10%;
+
+        }
+
+        &__desc {
+            @include dflex(flex-start, flex-start, column);
+            width: 90%;
+
+            &__title {
+                font-size: 1.2rem;
+            }
+
+        }
+
+    }
+}
