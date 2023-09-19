@@ -1,6 +1,7 @@
 .header {
     background-color: $color-gray;
     padding: $padding-m 0;
+    height: 10vh;
 
     &__container {
         @include wauto($medium-width);

@@ -2,14 +2,16 @@
     width: 300px;
     border: 2px solid $color-gray;
     overflow: hidden;
-    background-color: $color-white;
+    background-color: $color-gray;
     padding-bottom: $padding-l;
+    margin-bottom: $margin-l;
+    transition: 0.5s;
 
     &__image {
         width: 100%;
         margin: auto;
         object-fit: cover;
-        height: 350px;
+        height: 390px;
     }
 
     &__desc {
@@ -17,6 +19,7 @@
         
 
         &__title {
+            font-size: 1rem;
             color: $color-primary;
             margin-top: $margin-m;
             overflow: hidden;
@@ -31,6 +34,16 @@
             margin-top: $margin-m;
             color: $color-accent-primary;
             font-size: 1rem;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+        &>.card__image {
+            width: 100%;
+            object-fit: contain;
+            transition: 0.5s;
         }
     }
 }

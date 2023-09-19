@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake store</title>
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="data.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="data.js" defer></script>
     <script src="main.js" defer></script>
 </head>
 
@@ -26,19 +28,27 @@
             <div class="header__container__user">
                 <i class="header__container__user__item fa-solid fa-user"></i>
                 <i class="header__container__user__item fa-solid fa-cart-shopping"></i>
+                <span id="cart-counter" class="header__container__user"></span>
             </div>
 
         </div>
     </header>
 
-    <section id="root" class="root">
-        <div class="card">
-            <img src="" alt="" class="card__image">
-            <div class="card__desc">
-                <h2 class="card__desc__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, fuga ab quod culpa perferendis repudiandae provident repellendus officia obcaecati et eligendi accusantium commodi consectetur aut ex eos, temporibus quibusdam repellat?</h2>
-                <h2 class="card__desc__price">200000</h2>
-                
+    <div class="cart hidden">
+        <div class="cart__item">
+            <img src="" alt="" class="cart__item__image">
+            <div class="cart__item__desc">
+
             </div>
+        </div>
+    </div>
+
+    <section id="root" class="root">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </section>
 </body>

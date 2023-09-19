@@ -1,5 +1,6 @@
 #root {
     
     @include wauto(80%);
+    @include dflex(center, flex-start, row, wrap);
     margin-top: $margin-xxxl;
 }
